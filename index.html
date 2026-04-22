@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30대 저속노화 쇼츠 대본 프리뷰</title>
+    <meta name="description" content="30대를 위한 트렌디한 건강 상식 유튜브 쇼츠 대본 및 시각화 프리뷰입니다.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="header-content">
+                <h1>YouTube Short Script <span class="accent">Designer</span></h1>
+                <p>30대 건강 상식: 저속노화 루틴</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="shorts-preview-container">
+                <div class="shorts-display">
+                    <!-- Shorts Mobile Frame -->
+                    <div class="mobile-frame">
+                        <div class="screen">
+                            <div id="scene-image" class="scene-bg"></div>
+                            <div class="overlay-overlay"></div>
+                            <div class="content-overlay">
+                                <div class="scene-label">SCENE <span id="current-scene-number">1</span></div>
+                                <p id="scene-script" class="script-text">데이터를 불러오는 중입니다...</p>
+                                <div class="image-prompt-box">
+                                    <span class="prompt-icon">🎨</span>
+                                    <p id="scene-prompt" class="prompt-text"></p>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div id="progress-fill" class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scene Controls -->
+                    <div class="scene-controls">
+                        <button id="prev-btn" class="ctrl-btn" disabled>PREV</button>
+                        <div class="scene-indicators" id="indicators"></div>
+                        <button id="next-btn" class="ctrl-btn">NEXT</button>
+                    </div>
+                </div>
+
+                <div class="details-panel">
+                    <section class="info-section">
+                        <h2>Analysis Insights</h2>
+                        <ul class="insight-list">
+                            <li><span class="tag">Trend</span> 저속노화 (Slow Aging)</li>
+                            <li><span class="tag">Target</span> 30대 남녀</li>
+                            <li><span class="tag">Topic</span> 혈당 스파이크 관리</li>
+                        </ul>
+                    </section>
+                    
+                    <section class="json-metadata">
+                        <h2>File: plan.json</h2>
+                        <pre id="json-viewer" class="code-block"></pre>
+                    </section>
+
+                    <footer class="panel-footer">
+                        <button class="primary-btn" id="download-json">Download JSON</button>
+                    </footer>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

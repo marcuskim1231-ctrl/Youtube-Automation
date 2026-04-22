@@ -1,0 +1,32 @@
+# Sensitive configuration files
+client_secret_json.json
+token.json
+.env
+
+# Large files and assets
+assets/
+*.mp4
+*.m4a
+*.wav
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+pubsub-debug.log
+ui-debug.log
+firebase.json
+firebase.rules
+firestore.rules
+firestore.indexes.json
